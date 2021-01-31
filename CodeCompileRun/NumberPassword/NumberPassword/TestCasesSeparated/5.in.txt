@@ -1,0 +1,34 @@
+The government of Telangana decided to improve network coverage in its state. Telangana has a unique structure: the capital in the center and n cities in a circle around the Hyderabad. The Hyderabad already has a good network coverage (so the government ignores it), but the i-th city contains ai(like a1,a2...) households that require a connection.
+
+The government designed a plan to build n network stations between all pairs of neighboring cities which will maintain connections only for these cities. In other words, the i-th network station will provide service only for the i-th and the (i+1)-th city (the n-th station is connected to the n-th and the 1-st city).
+
+All network stations have capacities: the i-th station can provide the connection to at most bi households.
+
+Now the government asks you to check can the designed stations meet the needs of all cities or not — that is, is it possible to assign each household a network station so that each network station i provides the connection to at most bi(like b1,b2..) households.
+
+INPUT:
+
+The first line contains a single integer t (1<=t<=104) — the number of test cases.
+
+The first line of each test case contains the single integer n (2<=n<=106) — the number of cities and stations.
+
+The second line of each test case contains n integers (1<=ai<=109) — the number of households in the i-th city.
+
+The third line of each test case contains n integers (1<=bi<=109) — the capacities of the designed stations. 
+
+OUTPUT:
+For each test case, print YES, if the designed stations can meet the needs of all cities, or NO otherwise.
+
+SAMPLE INPUT:
+2
+3
+2 3 4
+3 3 3
+4
+2 3 4 5
+3 7 2 2
+
+SAMPLE OUTPUT:
+
+YES
+NO

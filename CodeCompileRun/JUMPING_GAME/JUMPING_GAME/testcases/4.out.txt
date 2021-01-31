@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class REARRAY2 {
+//    Time limit exceeded
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0){
+            int n = sc.nextInt();
+            List<Integer> arr = new ArrayList<>();
+            for (int i=0;i<n;i++){
+                arr.add(sc.nextInt());
+            }
+            while(arr.size()>0){
+                if(arr.size() > 0) {
+                    System.out.print(Collections.max(arr) + " ");
+                    arr.remove(Collections.max(arr));
+                }
+                if(arr.size() > 0) {
+                    System.out.print(Collections.min(arr) + " ");
+                    arr.remove(Collections.min(arr));
+                }
+            }
+            System.out.println();
+        }
+    }
+}
